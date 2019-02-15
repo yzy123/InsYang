@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ProfileFragment">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+
+        <TextView
+            android:id="@+id/username"
+            android:text ="username"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:padding="4sp"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark" />
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_profile"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/fullname"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:text="full name"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/bio"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:text="Bio" />
+
+
+            <Button
+                android:id="@+id/editprofile"
+                android:layout_marginTop="70dp"
+                android:padding="10dp"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="Edit Profile"
+                />
+
+            <Button
+                android:id="@+id/logout"
+                android:padding="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="Log Out"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
