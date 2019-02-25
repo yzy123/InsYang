@@ -18,11 +18,14 @@
             android:background="?android:attr/windowBackground">
 
 
-            <ImageView
+            <TextView
                 android:layout_width="180dp"
                 android:layout_height="35dp"
+                android:text = "Photo Sharing"
+                android:textSize="20dp"
+                android:textAlignment="center"
                 android:layout_gravity="center"
-                android:src="@drawable/logo"/>
+                />
 
 
         </android.support.v7.widget.Toolbar>
